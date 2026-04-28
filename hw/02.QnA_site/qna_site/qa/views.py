@@ -41,7 +41,7 @@ def question_detail(request, pk):
 
 
 # TODO: 이 뷰에 @login_required 데코레이터를 적용하세요
-
+@login_required
 def ask_question(request):
     """질문 작성 뷰: 로그인한 사용자만 질문을 작성할 수 있음"""
     if request.method == 'POST':
